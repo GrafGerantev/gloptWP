@@ -2,8 +2,8 @@ $(document).ready(function(){
     /*Slider*/
     $('.reviews-carousel').slick({
         speed: 1200,
-        prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrows/left.svg"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="icons/arrows/right.svg"></button>',
+        prevArrow: '<button type="button" class="slick-prev"><img src="<?php get_template_directory_uri() . /assets/icons/arrows/left.svg ?>"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="<?php get_template_directory_uri() . /assets/icons/arrows/right.svg?>"></button>',
         responsive: [
             {
                 breakpoint: 992,
@@ -93,7 +93,7 @@ $(document).ready(function(){
             },
             messages: {
                 /*name: "Пожалуйста введите свое имя",*/
-                name: {
+                name_form: {
                     required: "Пожалуйста введите свое имя",
                     minlength: jQuery.validator.format("Введите не менее {0} символа!")
                 },

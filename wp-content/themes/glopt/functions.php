@@ -26,6 +26,7 @@ add_theme_support( 'menus' );
 
 add_filter( 'get_custom_logo', 'change_logo_class' );
 
+
 /*Меняем классы вывода логотипа WP на свои*/ 
 function change_logo_class( $html ) {
 
@@ -35,6 +36,7 @@ function change_logo_class( $html ) {
 
     return $html;
 };
+
 
 
 /* class MyWalker extends Walker_Nav_Menu {
